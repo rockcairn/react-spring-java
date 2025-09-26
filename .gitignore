@@ -1,0 +1,69 @@
+# =============================
+# Java / Kotlin / Spring Boot
+# =============================
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Spring Boot / Maven
+target/
+out/
+build/
+
+# VS Code
+.vscode/
+
+# =============================
+# Maven
+# =============================
+# Local repository
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# =============================
+# Node / React frontend
+# =============================
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# npm / yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =============================
+# PostgreSQL
+# =============================
+# Database dump files
+*.sql
+*.dump
+
+# =============================
+# Misc
+# =============================
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swps
+*.swo
+
+#########
+# project specific
+#########
+Assignment.md
