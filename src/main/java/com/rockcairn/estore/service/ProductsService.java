@@ -2,6 +2,8 @@ package com.rockcairn.estore.service;
 
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -36,6 +38,20 @@ public class ProductsService {
         logRepositoryResponse(products);
 
         return productMapper.toDtoList(products);
+    }
+
+    public ProductDto createProduct(ProductDto dto) {
+        logRepositoryResponse(dto);
+        // Convert DTO → entity
+        Product entity = productMapper.toEntity(dto);
+
+        // Save to DB
+        Product saved = productRepository.save(entity);
+
+        // Map back to DTO
+        ProductDto response = productMapper.toDto(saved);
+
+        return response;
     }
 
     private void logRepositoryResponse(Object data) {

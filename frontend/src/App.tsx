@@ -1,13 +1,17 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import ProductList from './product-list';
+import Products from './pages/Products';
+import Create from './pages/Create';
 
 function App() {
 
   return (
-    <div style={{ padding: "1rem" }}>
-      <h1>Products</h1>
-      <ProductList/>
-    </div>
+     <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Products />} />
+        <Route path="/create" element={<Create />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

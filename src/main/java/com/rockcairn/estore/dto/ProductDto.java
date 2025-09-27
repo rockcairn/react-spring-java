@@ -8,5 +8,4 @@ import lombok.NoArgsConstructor;
 public class ProductDto {
     private Long id;
     private String name;
-    
 }
