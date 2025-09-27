@@ -49,7 +49,7 @@ export default function CreateProductForm() {
         
         {/* Product Name */}
         <div className="mb-4">
-          <label htmlFor="name" className="mb-2 block text-sm font-medium">
+          <label for="product-name" className="mb-2 block text-sm font-medium">
             Product Name
           </label>
           <div className="relative mt-2 rounded-md">
@@ -70,7 +70,7 @@ export default function CreateProductForm() {
       <div className="mt-6 flex justify-end gap-4">
         <Link
           to="/"
-          className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
+          className="flex h-12 items-center rounded-lg bg-gray-100 px-4 text-md font-medium text-gray-600 transition-colors hover:bg-gray-200"
         >
           Cancel
         </Link>
