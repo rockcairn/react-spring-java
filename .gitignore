@@ -51,6 +51,8 @@ yarn-error.log*
 # Database dump files
 *.sql
 *.dump
+# Inlcude the migrations
+!db/migrations/*.sql
 
 # =============================
 # Misc
